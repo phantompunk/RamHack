@@ -5,10 +5,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.reimaginebanking.api.java.NessieClient;
+
 public class RamHack extends AppCompatActivity {
+
+    NessieClient nessieClient = NessieClient.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        nessieClient.setAPIKey("ad0641a1b2d5df46729a934857de7498");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ram_hack);
     }
