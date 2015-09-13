@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
 
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="160dp"
+        android:maxHeight="160dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/capitaloneLogo"
+        android:paddingBottom="24dp"
+        android:layout_gravity="center" />
+
+    <TextView android:id="@+id/productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/productname"
+        android:layout_gravity="left"
+        android:textSize="24dip"/>
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/loginhint"
+        android:inputType="textEmailAddress" />
+    <TextView android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/productprice"
+        android:paddingTop="16dp"
+        android:layout_gravity="left"
+        android:textSize="24dip"/>/>
+    <EditText
+        android:id="@+id/passwordbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passwordhint"
+        android:inputType="textEmailAddress" />
+    <TextView android:id="@+id/productprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/productprice"
+        android:paddingTop="16dp"
+        android:layout_gravity="left"
+        android:textSize="24dip"/>/>
+    <EditText
+        android:id="@+id/passwordtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passwordhint"
+        android:inputType="textEmailAddress" />
+    <ImageView android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/seeResults"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"/>
 </LinearLayout>

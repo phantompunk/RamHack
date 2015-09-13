@@ -8,7 +8,7 @@
     android:paddingRight="20dip">
 
     <ImageView
-        android:id="@+id/image_view"
+        android:id="@+id/image_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/image_view"
+            android:id="@+id/image_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
