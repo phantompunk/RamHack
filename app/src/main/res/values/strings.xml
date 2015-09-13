@@ -14,4 +14,7 @@
     <string name="linktoank">See you bank Account</string>
     <string name="loginhint">Email Address</string>
     <string name="passwordhint">8 character min</string>
+    <string name="result">This is a bad purchase</string>
+    <string name="result2">You are high risk</string>
+    <string name="result3">You have bigger things to worry about</string>
 </resources>
