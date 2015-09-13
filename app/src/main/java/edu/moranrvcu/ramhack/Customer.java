@@ -2,6 +2,10 @@ package edu.moranrvcu.ramhack;
 
 
 import com.reimaginebanking.api.java.NessieClient;
+import org.json.*;
+
+import java.net.URL;
+
 
 /**
  * Created by Bao Pham on 9/12/15.
@@ -11,6 +15,7 @@ import com.reimaginebanking.api.java.NessieClient;
 public class Customer {
 
     NessieClient nessieClient = NessieClient.getInstance();
+
 
     private String customerId;
     private String firstName;
