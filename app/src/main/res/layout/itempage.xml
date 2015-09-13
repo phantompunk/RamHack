@@ -15,7 +15,7 @@
         android:maxWidth="160dp"
         android:maxHeight="160dp"
         android:layout_marginLeft="3dp"
-        android:src="@drawable/capitaloneLogo"
+        android:src="@drawable/capitalonelogo"
         android:paddingBottom="24dp"
         android:layout_gravity="center" />
 
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:layout_marginLeft="3dp"
-        android:src="@drawable/seeResults"
+        android:src="@drawable/seeresults"
         android:layout_gravity="center_horizontal"
         android:paddingTop="16dp"/>
 </LinearLayout>

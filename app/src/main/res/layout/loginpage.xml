@@ -15,7 +15,7 @@
         android:maxWidth="140dp"
         android:maxHeight="140dp"
         android:layout_marginLeft="3dp"
-        android:src="@drawable/capitaloneLogo"
+        android:src="@drawable/capitalonelogo"
         android:paddingBottom="24dp"
         android:layout_gravity="center" />
 
