@@ -1,10 +1,16 @@
 package edu.moranrvcu.ramhack;
 
+
+import com.reimaginebanking.api.java.NessieClient;
+
 /**
  * Created by Bao Pham on 9/12/15.
  * tests
  */
+
 public class Customer {
+
+    NessieClient nessieClient = NessieClient.getInstance();
 
     private String customerId;
     private String firstName;
