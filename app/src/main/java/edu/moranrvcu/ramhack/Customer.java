@@ -2,6 +2,7 @@ package edu.moranrvcu.ramhack;
 
 /**
  * Created by Bao Pham on 9/12/15.
+ * tests
  */
 public class Customer {
 
