@@ -3,22 +3,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
-    <TextView android:id="@+id/text"
+    android:gravity="center"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <ImageView
+        android:id="@+id/image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello, I am a TextView" />
-    <Button android:id="@+id/button"
+        android:adjustViewBounds="true"
+        android:maxWidth="140dp"
+        android:maxHeight="140dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/capitaloneLogo"
+        android:paddingBottom="24dp"
+        android:layout_gravity="center" />
+
+    <TextView android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello, I am a Button" />
-    <TextView android:id="@+id/text"
+        android:text="@string/login"
+        android:layout_gravity="left"
+        android:textSize="24dip"/>
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/loginhint"
+        android:inputType="textEmailAddress" />
+    <TextView android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello, I am a TextView"
-        android:paddingTop="16dp"/>
-    <Button android:id="@+id/button"
+        android:text="@string/password"
+        android:paddingTop="16dp"
+        android:layout_gravity="left"
+        android:textSize="24dip"/>/>
+    <EditText
+        android:id="@+id/passwordbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passwordhint"
+        android:inputType="textEmailAddress" />
+    <TextView android:id="@+id/accttext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello, I am a Button" />
+        android:text="@string/accthint"
+        android:paddingTop="16dp"
+        android:layout_gravity="left" />
+    <!--ImageView android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/blue"
+        android:layout_gravity="center_horizontal" /-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/blue"
+            android:layout_gravity="center" />
+    </GridLayout>
+
 </LinearLayout>

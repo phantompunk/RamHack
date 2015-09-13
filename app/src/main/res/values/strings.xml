@@ -3,4 +3,15 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="accthint">Make an Account</string>
+    <string name="productname">Name of Product</string>
+    <string name="productprice">Price of Product</string>
+    <string name="producttype">Category of Product</string>
+    <string name="results">See Results</string>
+    <string name="anotherproduct">Check Another Product</string>
+    <string name="linktoank">See you bank Account</string>
+    <string name="loginhint">Email Address</string>
+    <string name="passwordhint">8 character min</string>
 </resources>
