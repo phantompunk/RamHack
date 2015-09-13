@@ -8,7 +8,7 @@ public class RiskCalc {
     double riskScore;
     boolean isRisk;
     int pointLimit;
-    int necval;
+    int necVal;
 
 
     public double calcRisk(Customer c,Item i)
