@@ -17,18 +17,19 @@ public class Customer {
     private String lastName;
     private double balance;
     private double[] recentPurchases;
-
+    public double total = 0;
     public Customer() {
         this.customerId = "";
         this.firstName = "";
         this.lastName = "";
         this.balance = 0;
     }
-    public Customer(String customerId, String firstName, String lastName, double balance) {
+    public Customer(String customerId, String firstName, String lastName, double balance, double[] recentPurchases) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.balance = balance;
+        this.recentPurchases = recentPurchases;
     }
 
     public String getCustomerId() {
@@ -63,5 +64,13 @@ public class Customer {
 
     public double getBalance() {
         return balance;
+    }
+    public double totalRecentPurchaes()  //adds up all the prices of the recent purchases array
+    {
+     for(int i =0; i < recentPurchases.length; i++)
+     {
+         total = recentPurchases[i] + total;
+     }
+        return total;
     }
 }
