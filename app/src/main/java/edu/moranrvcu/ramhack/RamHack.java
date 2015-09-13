@@ -4,6 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.os.AsyncTask;
+import android.view.View;
+import org.json.JSONException;
+import org.json.JSONObject;
+import android.widget.TextView;
 
 import com.reimaginebanking.api.java.NessieClient;
 
@@ -16,6 +21,13 @@ public class RamHack extends AppCompatActivity {
         nessieClient.setAPIKey("ad0641a1b2d5df46729a934857de7498");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ram_hack);
+
+        String customerID = "55e94a6af8d8770528e60cba";
+        new ProcessJSON().execute("http://api.reimaginebanking.com/customers/" + customerID +
+                "/accounts?key=ad0641a1b2d5df46729a934857de7498");
+
+
+
     }
 
     @Override
@@ -39,4 +51,32 @@ public class RamHack extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+    private class ProcessJSON extends AsyncTask<String, Void, String> {
+
+        protected String doInBackground(String... strings) {
+            String stream = null;
+            String urlString = strings[0];
+
+            HTTPDataHandler hh = new HTTPDataHandler();
+            stream = hh.GetHTTPData(urlString);
+
+            // Return the data from specified url
+            return stream;
+        }
+
+        protected void onPostExecute(String stream) {
+            JSONObject obj = null;
+            try {
+                obj = new JSONObject(stream);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            TextView tv = (TextView) findViewById(R.id.textView2);
+            tv.setText(obj.toString());
+
+        }
+    }
 }
+
